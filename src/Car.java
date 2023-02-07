@@ -8,7 +8,10 @@ public class Car {
     }
     public Car(String manufacturer, String carModel, int productionYear, String color){
         this();
-
+        setManufacturer(manufacturer);
+        setCarModel(carModel);
+        setProductionYear(productionYear);
+        setColor(color);
     }
     public int getId(){
         return id;
