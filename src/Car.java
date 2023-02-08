@@ -5,6 +5,7 @@ public class Car {
     private int productionYear;
     private String color;
     public Car(){
+
     }
     public Car(String manufacturer, String carModel, int productionYear, String color){
         this();
