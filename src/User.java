@@ -4,9 +4,8 @@ public class User {
     private String password;
     private String name;
     private String surname;
-    public static int id_gen=1;
     public User(){
-        id=id_gen++;
+
     }
     public User(String username, String password, String name, String surname){
         this();

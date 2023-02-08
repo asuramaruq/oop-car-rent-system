@@ -4,9 +4,7 @@ public class Car {
     private String carModel;
     private int productionYear;
     private String color;
-    private static int id_gen=1;
     public Car(){
-        id=id_gen++;
     }
     public Car(String manufacturer, String carModel, int productionYear, String color){
         this();
