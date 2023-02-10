@@ -1,44 +1,80 @@
 public class Car {
     private int id;
-    private String manufacturer;
-    private String carModel;
-    private int productionYear;
+    private int year;
+    private String brand;
+    private String model;
+    private String type;
     private String color;
+    private String status;
+
+
     public Car(){
 
     }
-    public Car(String manufacturer, String carModel, int productionYear, String color){
-        this();
-        setManufacturer(manufacturer);
-        setCarModel(carModel);
-        setProductionYear(productionYear);
-        setColor(color);
+    public Car(int id, int year, String brand, String model, String color, String type, String status){
+        this.id =id;
+        this.year = year;
+        this.brand =brand;
+        this.model = model;
+        this.color = color;
+        this.type = type;
+        this.status = status;
     }
-    public int getId(){
+
+    public int getId() {
         return id;
     }
-    public void setManufacturer(String manufacturer){
-        this.manufacturer=manufacturer;
+
+    public int getYear() {
+        return year;
     }
-    public String getManufacturer(){
-        return manufacturer;
+
+    public String getBrand() {
+        return brand;
     }
-    public void setCarModel(String carModel){
-        this.carModel=carModel;
-    }
-    public String getCarModel(){
-        return carModel;
-    }
-    public void setProductionYear(int productionYear){
-        this.productionYear=productionYear;
-    }
-    public int getProductionYear(){
-        return productionYear;
-    }
-    public void setColor(String color){
-        this.color=color;
-    }
-    public String getColor(){
+
+    public String getColor() {
         return color;
     }
+
+    public String getModel() {
+        return model;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
 }
