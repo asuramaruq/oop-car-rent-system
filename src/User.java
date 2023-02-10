@@ -2,10 +2,13 @@ public abstract class User {
     private int id;
     private String name;
     private String surname;
-    private String login;
+    private String login; //username > login ; login too broad
     private String password;
 
+    //getPosition : client/admin ; override in subclasses
+
     public User() {
+
     }
 
     public User(int id, String name, String surname, String login, String password) {

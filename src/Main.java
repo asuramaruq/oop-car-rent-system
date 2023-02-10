@@ -34,6 +34,7 @@ public class Main {
                 password = scan.next();
                 client = Sign_in(login, password);
             }
+            //else error if res!=1 or res!=2
             System.out.println("приветствие" + " " + client.getName() + " " + client.getSurname());
             while (true) {
                 System.out.println("выбор опц");
@@ -47,8 +48,9 @@ public class Main {
                     showAllCars();
                     int ID = scan.nextInt();
                     car = rentCar(ID);
-                    System.out.println(" время аренды? -15.02.23-");
+                    System.out.println(" время аренды? -15.02.23-");//set periods of time to choose from and pay for each 2-5-12-24 hours, 1-7 days, 1-2 weeks ish ?
                     String time = scan.next();
+                    //after choosing a period outputs a date of return and price calculated in method
                     System.out.println(client.getName() + " аренда " + car.getBrand() + " " + car.getModel() + " до " + time);
                     // функция с арендой машины
                 } else if (command == 2) {
@@ -86,10 +88,10 @@ public class Main {
             System.out.println("Second name: ");
             surname = scan.nextLine();
             preparedStatement.setString(2, surname);
-            System.out.println("Login: ");
+            System.out.println("Login: ");//check for uniqueness
             login = scan.nextLine();
             preparedStatement.setString(3, login);
-            System.out.println("Password: ");
+            System.out.println("Password: ");//check for 1-8, upper case, restricted symbols
             password = scan.nextLine();
             preparedStatement.setString(4, password);
             System.out.println("Telephone: ");

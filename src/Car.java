@@ -5,8 +5,14 @@ public class Car {
     private String model;
     private String type;
     private String color;
-    private String status;
+    private String status;//status can be bool 1/0
+    //private bool status
 
+    //price for rent for each specific car
+
+    //private int pricePerHour
+    //private int pricePerDay
+    //private int pricePerWeek
 
     public Car(){
 

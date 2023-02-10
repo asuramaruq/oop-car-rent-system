@@ -1,5 +1,5 @@
 public class Client extends User{
-    private String telephone;
+    private String telephone; // contact_info/contact to either store email or phone number / phone_number
 
     public Client(){
     }
