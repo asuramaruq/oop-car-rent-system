@@ -26,7 +26,7 @@ public class Main {
             int res = scan.nextInt();
             if (res == 2) {
                 Registration();
-                //System.out.println("спс за регис" + client.getName()+" " + client.getSurname());
+                //System.out.println("Thank you for registration, " + client.getName()+" " + client.getSurname());
             } else if (res == 1) {
                 System.out.print("login:");
                 login = scan.next();
@@ -35,24 +35,24 @@ public class Main {
                 client = Sign_in(login, password);
             }
             //else error if res!=1 or res!=2
-            System.out.println("приветствие" + " " + client.getName() + " " + client.getSurname());
+            System.out.println("Hello, " + " " + client.getName() + " " + client.getSurname());
             while (true) {
-                System.out.println("выбор опц");
-                System.out.println(" 1. аренда авто \n 2.все машины \n 3.доступные машины\n 4.профиль\n 5.выход");
+                System.out.println("Choose an option");
+                System.out.println(" 1. Rent a car \n 2.All cars \n 3.Available cars \n 4.Profile \n 5.Close");
                 int command = scan.nextInt();
                 if (command == 1) {
                     Car car = new Car();
-                    System.out.println("слова при аренде");
-                    System.out.println("вот доступные машины для аренды ВЫБИРАЙ");
+                    System.out.println("Here you can rent a car that you want");
+                    System.out.println("Choose a car");
                     //showAllAvailableCars();
                     showAllCars();
                     int ID = scan.nextInt();
                     car = rentCar(ID);
-                    System.out.println(" время аренды? -15.02.23-");//set periods of time to choose from and pay for each 2-5-12-24 hours, 1-7 days, 1-2 weeks ish ?
+                    System.out.println(" Choose a period of rental -15.02.23-");//set periods of time to choose from and pay for each 2-5-12-24 hours, 1-7 days, 1-2 weeks ish ?
                     String time = scan.next();
                     //after choosing a period outputs a date of return and price calculated in method
-                    System.out.println(client.getName() + " аренда " + car.getBrand() + " " + car.getModel() + " до " + time);
-                    // функция с арендой машины
+                    System.out.println(client.getName() + " rents  " + car.getBrand() + " " + car.getModel() + " until " + time);
+                    // car rental function
                 } else if (command == 2) {
                     showAllCars();
                 } else if (command == 3) {
